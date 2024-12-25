@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>lec 7</title>
+</head>
+<body>
+    <h2>JavaScript Alert Function</h2>
+    <p>The alert will be shown everytime you load the page.</p>
+    <!--<script>
+        alert('Hello World!');
+    </script>-->
+
+    <hr />
+
+    <h1>JavaScript Variables</h1>
+    <p>You can declare many variables in one statement.</p>
+    <p id="demo"></p>
+    <script>
+        let person = "Ahmed", carName = "Volvo", price = 200;
+        document.getElementById("demo").innerHTML = carName;
+    </script>
+
+    <hr />
+
+    <h2>Java script InnerHTML func</h2>
+    <p id="demo1"></p>
+
+    <script>
+        document.getElementById('demo1').innerHTML = "added by <b> Java Script<b/>";
+    </script>
+
+    <hr />
+
+    <!--<script>
+        document.getElementById('demo2').style.color = 'red';
+    </script>-->
+    <h2>Javascript In The Head</h2>
+    <p id="demo2">My color will be changed to red if the script is executed.</p>
+    <script>
+        document.getElementById('demo2').style.color = 'red';
+    </script>
+
+    <hr />
+
+    <script>
+        let Person = {
+            id: 1,
+            username : "noba",
+            isWorking : true
+        };
+        document.write('id = ' + Person.id + '<br>');
+        document.write('username = ' + Person.username + '<br>');
+        document.write('isWorking = ' + Person.isWorking);
+    </script>
+
+</body>
+</html>

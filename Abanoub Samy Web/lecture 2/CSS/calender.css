@@ -1,0 +1,33 @@
+﻿.cal{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+table{
+    width:30%;
+    height:30%;
+}
+ caption{
+    background-color:deepskyblue;
+    text-align:center;
+    height:30px;
+    font-size:25px;
+}
+th,td{
+    font-size:20px;
+    text-align:center;
+}
+
+th:hover,td:hover{
+    background-color:#999;
+}
+th:first-child, td:first-child{
+    color:aqua;
+}
+th:last-child , td:last-child{
+    color:aqua;
+}
+h1{
+    font-size:100px;
+    text-align:center;
+}

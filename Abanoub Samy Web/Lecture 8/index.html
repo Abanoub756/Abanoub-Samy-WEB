@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <h1 class="heading">LEC8</h1>
+    <hr>
+    <div class="container">
+        <h1>JavaScript Functions</h1>
+        <p id="demo1">Call a function which performs a calculation and returns the result: </p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript if .. else</h2>
+        <p id="demo2">A time-based greeting:</p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript switch</h2>
+        <p id="demo3"></p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript For Loop</h2>
+        <p id="demo4"></p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript For In Loop</h2>
+        <p>The for in statement loops through the properties of an object:</p>
+        <p id="demo5"></p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript For Of Loop</h2>
+        <p>The for of statement loops through the values of any iterable object:</p>
+        <p id="demo6"></p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript For Of Loop</h2>
+        <p>The for of statement loops through the values of an iterable object.</p>
+        <div id="demo7"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>JavaScript While Loop</h2>
+        <div id="demo8"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>JS BOM</h1>
+        <p>The document object can be accessed through the window object.</p>
+        <div id="demo9"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>JavaScript Width And Height</h1>
+        <p id="demo10"></p>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Javascript Events</h2>
+        <input type="button" onclick="clickevent()" value="Who's this">
+        <div id="demo11"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <p onmouseover="mouseoverevent()" style="border: 1px solid black;"> Keep cursor over me</p>
+    </div>
+    <hr>
+    <div class="container">
+        <div id="demo12"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2> Enter something here</h2>
+        <input type="text" id="input1" onfocus="focusevent()"/>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="calculator">
+            <h1> JavaScript Simple Calculator by WsCube Tech </h1>
+            <div class="formstyle">
+                <form name="form1">
+                    <!-- This input box shows the button pressed by the user in calculator. -->
+                    <input class="calc" type="text" name="answer"> <br> <br>
+                    <!-- Display the calculator button on the screen. -->
+                    <!-- onclick() function display the number pressed by the user. -->
+                    <input type="button" value="1" onclick="form1.answer.value += '1' ">
+                    <input type="button" value="2" onclick="form1.answer.value += '2' ">
+                    <input type="button" value="3" onclick="form1.answer.value += '3' ">
+                    <input type="button" value="+" onclick="form1.answer.value += '+' ">
+                    <br> <br>
+                    <input type="button" value="4" onclick="form1.answer.value += '4' ">
+                    <input type="button" value="5" onclick="form1.answer.value += '5' ">
+                    <input type="button" value="6" onclick="form1.answer.value += '6' ">
+                    <input type="button" value="-" onclick="form1.answer.value += '-' ">
+                    <br> <br>
+                    <input type="button" value="7" onclick="form1.answer.value += '7' ">
+                    <input type="button" value="8" onclick="form1.answer.value += '8' ">
+                    <input type="button" value="9" onclick="form1.answer.value += '9' ">
+                    <input type="button" value="*" onclick="form1.answer.value += '*' ">
+                    <br> <br>
+                    <input type="button" value="/" onclick="form1.answer.value += '/' ">
+                    <input type="button" value="0" onclick="form1.answer.value += '0' ">
+                    <input type="button" value="." onclick="form1.answer.value += '.' ">
+                    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+                    <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) ">
+                    <br>
+                    <!-- Display the Cancel button and erase all data entered by the user. -->
+                    <input type="button" value="Clear All" onclick="form1.answer.value = '' " class="clear" >
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Window Event</h1>
+        <div id="demo13">window.onload: </div>
+        <script>
+            window.onload = () => {
+                document.getElementById('demo13').innerHTML += ('loaded successfully');
+            }
+        </script>
+        <div id="demo14">window.onunload: </div>
+        <script>
+            window.onunload = () => {
+                document.getElementById('demo14').innerHTML += ('unloaded successfully');
+            }
+        </script>
+        <div id="demo15">window.onresize: </div>
+        <script>
+            window.onresize = () => {
+                document.getElementById('demo15').innerHTML = ('window.onresize: resized successfully');
+            }
+        </script>
+        <div id="demo16">window.onreset: </div>
+        <script>
+            window.onreset = () => {
+                document.getElementById('demo16').innerHTML = ('window.onreset: reseted successfully');
+            }
+        </script>
+        <div id="demo17">window.onscroll: </div>
+        <script>
+            window.onscroll = () => {
+                document.getElementById('demo17').innerHTML = ('window.onscroll: scrolled successfully');
+            }
+        </script>
+    </div>
+    <hr>
+    <div class="container">
+        <!-- <h1>Keyboard Event</h1>
+        <label>Keyboard.onkeydown:</label>
+        <input id="demo18">
+        <script>
+            KeyboardEvent.onkeydown = () => {
+                document.getElementById('demo18').innerHTML = ('Keyboard.onkeydown: successfully');
+            }
+        </script> -->
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Form Events: </h1>
+        <form>
+            <input type="text" onfocus="alert('onfocus')">
+            <input type="text" onblur="alert('onblur')">
+            <input type="text" onchange="alert('onchange');">
+            <input type="submit" onsubmit="alert('onsubmit');">
+        </form>
+    </div>
+    <hr>
+    <script src="script.js"></script>
+</body>
+</html>

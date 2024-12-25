@@ -1,0 +1,113 @@
+﻿body{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    margin-top:10%;
+}
+.frame {
+    background-color: #555;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.display{
+    width:90%;
+    background-color:#111;
+    color:#888;
+    height:35px;
+    margin-top:3%;
+    border-radius:3px;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:5px;
+    align-items:center;
+    box-sizing:border-box;
+}
+
+.buttons {
+    display: grid;
+    width:90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 20px;
+}
+
+.num {
+    background-color: #888;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    transition: transform 0.1s, background-color 0.1s;
+    cursor: pointer;
+    border-radius:5px;
+    height:35px;
+}
+
+.op {
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    transition: transform 0.1s, background-color 0.1s;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.equal {
+    background-color: lawngreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    transition: transform 0.1s, background-color 0.1s;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.clear {
+    width: 90%;
+    background-color: red;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+.num:active {
+    transform: scale(0.95); 
+    background-color: #666; 
+}
+
+.op:active {
+    transform: scale(0.95);
+    background-color: darkorange;
+}
+.equal:active {
+    transform: scale(0.95);
+    background-color: green;
+}
+.clear:active {
+    transform: scale(0.95);
+    background-color: darkred;
+}
+

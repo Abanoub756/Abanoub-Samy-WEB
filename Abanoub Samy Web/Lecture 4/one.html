@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>colors</title>
+    <style>
+        body {
+        }
+        p.dotted {
+            border-style: dotted;
+            border-color:red;
+        }
+
+        p.dashed {
+            border-style: dashed;
+            border-color: orange;
+        }
+
+        p.solid {
+            border-style: solid;
+            border-color: green;
+        }
+
+        p.double {
+            border-style: double;
+            border-color: yellow;
+        }
+
+        p.groove {
+            border-style: groove;
+            border-color: blue;
+        }
+
+        p.ridge {
+            border-style: ridge;
+            border-color: purple;
+        }
+
+        p.inset {
+            border-style: inset;
+            border-color: rebeccapurple;
+        }
+
+        p.outset {
+            border-style: outset;
+            border-color: cornflowerblue;
+        }
+
+        p.none {
+            border-style: none;
+            border-color: lightblue;
+        }
+
+        p.hidden {
+            border-style: hidden;
+            border-color: lightcoral;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+            border-color: red;
+        }
+        .image-background {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url('winning man for template 1.jpg') 30 stretch;
+        }
+        #example1 {
+            background-image: url(chrome.gif), url(banana.gif);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HSL Lightness</h1>
+    <p>The third parameter of hsl() defines the lightness. 0% means black, and 100% means white:</p>
+    <h2 style="background-color:hsl(0, 100%, 66%);">hsl(0, 100%, 66%)</h2>
+    <h2 style="background-color:hsl(120, 100%, 25%);">hsl(120, 100%, 25%)</h2>
+    <h2 style="background-color:hsl(245, 69%, 55%);">hsl(245, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h2>
+
+    <hr />
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    Page 9 of 15
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <hr />
+    <p class="image-background">this is nothing</p>
+    <hr />
+
+    <div id="example1">
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+:root {
+    --main-color: #6c63ff;
+    --secondary-color: #ffa500;
+    --mark-color: #ffe66d;
+    --main-delay: 0.3s;
+    --padding-value: 45px;
+    --dur: 10s;
+}
+
+body {
+    background-image: linear-gradient(140deg, #a3d8f4, #f8c3c5, #a3d8f4, #f8c3c5);
+    padding: 0 30px 300px 30px;
+}
+
+.heading {
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: bolder;
+    text-shadow: 0 0 10px #ff4500, 0 0 10px #4682b4;
+    font-size: 5vw;
+}
+
+.container {
+    padding: 50px;
+    border: 1px solid #444;
+    background-color: #f5f5f5;
+}
+
+.my-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: #888 solid 3px;
+    margin: 100px 0;
+}
+
+button {
+    width: 150px;
+    height: 80px;
+    background-color: #6c63ff;
+    box-shadow: 0 0 10px #ff4500, 0 0 10px #4682b4;
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+    button:active {
+        font-size: 15px;
+        background-color: #5a55db;
+    }
+
+.calculator {
+    background-color: #292b2c;
+    height: 115vh;
+}
+
+    .calculator h1 {
+        text-align: center;
+        padding: 23px;
+        background-color: #444;
+        color: #ffa500;
+    }
+
+    .calculator .clear {
+        width: 270px;
+        border: 3px solid #888;
+        border-radius: 3px;
+        padding: 20px;
+        background-color: #333;
+        color: #ffe66d;
+    }
+
+.formstyle {
+    width: 350px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid #234cc5;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.calculator input {
+    width: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: 3px solid #222;
+    border-radius: 5px;
+    padding: 26px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.calculator .calc {
+    width: 280px;
+    border: 5px solid #222;
+    border-radius: 3px;
+    padding: 20px;
+    margin: auto;
+    background-color: #ddd;
+}

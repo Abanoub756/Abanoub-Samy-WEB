@@ -1,0 +1,23 @@
+﻿body {
+    background-color:aqua;
+}
+
+.table{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+table, td, th{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+
+th,td{
+    width:100px;
+    text-align:center;
+    background-color:greenyellow;
+    font-size:30px;
+}
+

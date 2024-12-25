@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="main-heading">SEC9</h1>
+    <hr>
+    <div class="content-box">
+        <h1>My first PHP page</h1>
+        <?php
+            echo "Hello World!";
+        ?>
+    </div>
+    <hr>
+    <div class="content-box">
+        <h1>Testing</h1>
+        <?php
+            var_dump($_REQUEST);
+            if (isset($_SERVER['REQUEST_METHOD'])) {
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $name = htmlspecialchars($_POST['name']);
+                    $email = htmlspecialchars($_POST['email']);
+                    $message = htmlspecialchars($_POST['message']);
+                    echo "<h2>Submitted Information:</h2>";
+                    echo "Name: $name<br>";
+                    echo "Email: $email<br>";
+                    echo "Message: $message<br>";
+                }
+            } else {
+                echo "Please enter a message";
+            }
+        ?>
+    </div>
+    <hr>
+    <div class="content-box">
+        <form method="post" action="action.php">
+            Name: <input type="text" name="name"><br>
+            Email: <input type="email" name="email"><br>
+            Message: <textarea name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <hr>
+    <div class="content-box">
+        <ul>
+            <?php
+                $names = ["Ahmed", "Ali", "Alamat", "Jason", "Taison", "Tahun"];
+                $age = [10, 20, 30, 40, 50, 60];
+                $len = count($names);
+                for ( $i = 0; $i < $len; $i++ ) {
+                    ?>
+                        <li><?= "Student-".$i." = Name: ". $names[$i] . " , Age : ". $age[$i] ?></li>
+                    <?php
+                }
+            ?>
+        </ul>
+    </div>
+    <hr>
+    <div class="content-box">
+        <?php
+            $IsLoggedIn = true;
+            $UserName = "John";
+            echo "<div style='text-align: center; margin-top: 30%;'>";
+            if ($IsLoggedIn) {
+                echo "Hello, $UserName";
+            } else {
+                echo "Hello Stranger";
+            }
+            echo "</div>";
+        ?>
+    </div>
+    <hr>
+    <div class="content-box">
+        <?php
+            function fib($i) {
+                if ($i <= 1) return 1;
+                return fib($i - 1) + fib($i - 2);
+            }
+            echo fib(5);
+        ?>
+    </div>
+    <hr>
+    <script>
+        var x = 10;
+        alert(x);
+    </script>
+</body>
+</html>

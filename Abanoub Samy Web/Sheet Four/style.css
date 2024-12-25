@@ -1,0 +1,84 @@
+/* Box Model */
+.box-model p {
+    width: 350px;
+    border: 1px solid black;
+  }
+  
+  .box-model .box-span {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: greenyellow;
+  }
+  
+  /* Column Layout */
+  .column-layout main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+  }
+  
+  .column-layout .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column-layout .column1 {
+    width: 20%;
+    background-color: orange;
+  }
+  
+  .column-layout .column2 {
+    width: 60%;
+    background-color: yellow;
+  }
+  
+  .column-layout .column3 {
+    width: 20%;
+    background-color: greenyellow;
+  }
+  
+  .column-layout header,
+  .column-layout footer {
+    background-color: pink;
+    text-align: center;
+  }
+  
+  /* Grid Container */
+  .grid-container .container {
+    display: grid;
+    grid-template-columns: minmax(auto, 80%) 1fr 3em;
+    grid-template-rows: 1fr 1fr 3fr;
+    width: 400px;
+    border: 2px solid black;
+    background-color: orange;
+    padding: 12px;
+  }
+  
+  .grid-container .item {
+    border: 1px solid black;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Flex List */
+  .flex-list ul.parent {
+    display: flex;
+    background-color: greenyellow;
+    padding: 0px;
+  }
+  
+  .flex-list li {
+    background-color: skyblue;
+    border: 1px solid black;
+    padding: 12px;
+    margin: 8px;
+    list-style: none;
+  }
+  

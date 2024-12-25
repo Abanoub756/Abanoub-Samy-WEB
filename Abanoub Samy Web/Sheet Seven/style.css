@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff7f50;
+    --secondary-color: rgb(123, 104, 238);
+    --transition-speed: 0.3s;
+    --spacing: 45px;
+}
+body{
+    background-image: linear-gradient(140deg, #f0f8ff, #ffb6c1, #f0f8ff, #ffb6c1);
+    padding: 0 30px 300px 30px;
+}
+.title{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 0 0 10px orange, 0 0 10px yellow;
+    font-size: 5vw;
+}
+hr{
+    border: #444 solid 3px;
+    margin: 100px 0 100px 0;
+}
+.button{
+    margin: auto;
+    border: var(--primary-color) solid 3px;
+    background-color: aquamarine;
+    display: inline-block;
+    width: fit-content;
+}
+img{
+    margin: auto;
+    display: block;
+}
+.container{
+    margin: 50px 0 200px 0;
+    border: 1px solid black;
+    padding: 50px;
+    min-width: 80vw;
+    min-height: 200px;
+    display: block;
+}
+.container1 {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container1 h1 {
+    margin: 0px;
+    color: coral;
+    font-size: 36px;
+}
+.container1 div {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+#removeThisElement {
+    color: red;
+}
+.container1 button{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: tomato;
+}
+.container1 button:hover{
+    background-color: coral;
+}
+.container2 {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumturquoise;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container2 h1 {
+    margin-top: 0px;
+    color: mediumseagreen;
+    font-size: 36px;
+}
+.container2 div {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container2 label,.container2 p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.container2 input {
+    display: block;
+    width: -webkit-fill-available;
+    padding: 10px;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid mediumseagreen;
+}
+.container2 button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: mediumturquoise;
+}
+.container2 button:hover {
+    background-color: mediumseagreen;
+}
+.container3 {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container3 h1 {
+    margin: 0px;
+    color: darkgreen;
+    font-size: 36px;
+}
+.container3 div {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container3 ul {
+    padding: 0px;
+    font-size: 26px;
+    margin: 20px 60px;
+    font-weight: bold;
+    color: darkolivegreen;
+}
+.container3 input {
+    display: block;
+    width: -webkit-fill-available;
+    padding: 10px;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: darkolivegreen;
+    border: 1px solid lightgreen;
+}
+.container3 input::placeholder {
+    color: darkolivegreen;
+}
+.container3 button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: green;
+}
+.container3 button:hover {
+    background-color: lightgreen;
+}

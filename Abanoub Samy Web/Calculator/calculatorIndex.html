@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>JavaScript Simple Calculator by WsCube Tech</h1>
+    <div class="formstyle">
+        <form name="form1">
+            <!-- Input box to display the pressed buttons -->
+            <input id="calc" type="text" name="answer" readonly> <br><br>
+
+            <!-- Calculator buttons -->
+            <input type="button" value="1" onclick="addValue('1')">
+            <input type="button" value="2" onclick="addValue('2')">
+            <input type="button" value="3" onclick="addValue('3')">
+            <input type="button" value="+" onclick="addValue('+')">
+            <br><br>
+
+            <input type="button" value="4" onclick="addValue('4')">
+            <input type="button" value="5" onclick="addValue('5')">
+            <input type="button" value="6" onclick="addValue('6')">
+            <input type="button" value="-" onclick="addValue('-')">
+            <br><br>
+
+            <input type="button" value="7" onclick="addValue('7')">
+            <input type="button" value="8" onclick="addValue('8')">
+            <input type="button" value="9" onclick="addValue('9')">
+            <input type="button" value="*" onclick="addValue('*')">
+            <br><br>
+
+            <input type="button" value="/" onclick="addValue('/')">
+            <input type="button" value="0" onclick="addValue('0')">
+            <input type="button" value="." onclick="addValue('.')">
+            <input type="button" value="=" onclick="calculateResult()">
+            <br><br>
+
+            <!-- Clear button -->
+            <input type="button" value="Clear All" onclick="clearDisplay()" id="clear">
+        </form>
+    </div>
+    <script src="calculatorJS.js"></script>
+</body>
+</html>
